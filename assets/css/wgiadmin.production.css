@@ -11707,13 +11707,19 @@ header, main, section, footer {
   }
 }
 
-aside .side-nav {
+aside.side-menu .side-nav {
   background-color: #0e1a1d;
   color: #fff;
 }
-aside .side-nav nav {
+aside.side-menu .side-nav nav {
   background-color: #0e1a1d;
   box-shadow: none;
+}
+aside.side-menu .side-nav li:not(.sidenav-logo) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+aside.side-menu .side-nav li a i {
+  color: #fff;
 }
 
 .page-footer {

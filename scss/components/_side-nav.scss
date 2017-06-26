@@ -6,7 +6,7 @@ header, main, section, footer {
   }
 }
 
-aside {
+aside.side-menu {
   .side-nav {
     background-color:  $sidenav-color;
     color: $sidenav-font-color;
@@ -14,6 +14,18 @@ aside {
     nav {
       background-color: $header-color;
       box-shadow: none;
+    }
+
+    li {
+      &:not(.sidenav-logo) {
+        border-bottom: 1px solid rgba(#fff, 0.2);
+      }
+
+      a {
+        i {
+          color: $sidenav-font-color;
+        }
+      }
     }
   }
 }
