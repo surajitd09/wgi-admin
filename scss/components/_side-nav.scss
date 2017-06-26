@@ -1,0 +1,19 @@
+header, main, section, footer {
+  padding-left: 300px;
+
+  @media only screen and (max-width : 992px) {
+    padding-left: 0;
+  }
+}
+
+aside {
+  .side-nav {
+    background-color:  $sidenav-color;
+    color: $sidenav-font-color;
+
+    nav {
+      background-color: $header-color;
+      box-shadow: none;
+    }
+  }
+}

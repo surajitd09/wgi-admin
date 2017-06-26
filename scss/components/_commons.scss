@@ -1,0 +1,30 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $default-font-size;
+}
+
+.container-fluid {
+  width: 100%;
+  display: block;
+  padding-left: $primary-padding-size;
+  padding-right: $primary-padding-size;
+
+  &:after {
+    content: ' ';
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+}
+
+.show-on-med-and-down {
+  display: none;
+
+  @media only screen and (max-width : 992px) {
+    display: block;
+  }
+}
+
+section {
+  height: 1000px;
+}

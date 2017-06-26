@@ -1,0 +1,45 @@
+header {
+  nav {
+    background-color: $header-color;
+    box-shadow: none;
+    right: 0;
+
+    .brand-logo {
+      display: none;
+      left: 0;
+      transform: translateX(0%);
+
+      @media only screen and (max-width : 992px) {
+        display: block;
+      }
+    }
+
+    #logout-dropdown {
+      min-width: 172px;
+
+      li {
+        > a {
+          margin: 0;
+          padding-left: $primary-padding-size - 5;
+          padding-right: $primary-padding-size - 5;
+          font-size: $default-font-size;
+
+          i {
+            margin-right: 5px;
+            font-size: $default-font-size + 7;
+          }
+        }
+
+        .button-collapse {
+          height: auto;
+          width: 100%;
+
+          i {
+            height: auto;
+            line-height: initial;
+          }
+        }
+      }
+    }
+  }
+}
